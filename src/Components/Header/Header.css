@@ -1,0 +1,15 @@
+
+
+.top-bar-container{
+    position: fixed;
+    left: 100px;
+    top: 30px;
+    padding: 5px;
+    background-color: bisque;
+
+}
+
+#website-name{
+    margin: 20px;
+    color: #07f37d;
+}
