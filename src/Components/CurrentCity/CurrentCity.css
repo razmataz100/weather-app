@@ -1,0 +1,9 @@
+.current-city-container{
+    background-color: brown;
+    height: 95%;
+    width: 400px;
+    top: 10px;
+    border-radius: 20px;
+    left: 33%;
+    position: fixed;
+}

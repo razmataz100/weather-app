@@ -1,0 +1,11 @@
+.search-bar{
+    position: fixed;
+    left: 100px;
+    top: 150px;
+    padding: 5px;
+}
+
+#search-button{
+   background-color: transparent;
+   color: white;  
+}
