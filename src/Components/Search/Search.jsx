@@ -27,6 +27,7 @@ const Search = () => {
 
             const item = {
                 City: data.location.name,
+                Icon: currentWeather.condition.icon,
                 LocalTime: data.location.localtime,
                 Temperature: currentWeather.temp_c,
                 FeelsLike: currentWeather.feelslike_c,
