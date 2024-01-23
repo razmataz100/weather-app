@@ -1,9 +1,51 @@
 .current-city-container{
-    background-color: brown;
-    height: 95%;
-    width: 400px;
-    top: 10px;
+    background-color: white;
+    height: 43%;
+    width: 40%;
+    top: 20px;
     border-radius: 20px;
     left: 33%;
     position: fixed;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5); 
 }
+
+#city-style{
+    position: absolute;
+    left: 10%;    
+}
+
+#icon-style{
+    position:absolute;
+    top: 50%;
+    left: 12%
+}
+#condition-style{
+    position:absolute;
+    top: 70%;
+    left: 12%
+}
+#temp-style{
+    position:absolute;
+    top:23%;
+    left: 14%;
+    font-size: 20px;
+}
+
+#time-style{
+    position:absolute;
+    left: 50%;
+    top: 5%;
+}
+
+#feelslike-style{
+    position:absolute;
+    top:33%;
+    left: 50%;
+}
+
+.maxmintemp{
+    position:absolute;
+    left: 50%;
+    top: 50%
+}
+
