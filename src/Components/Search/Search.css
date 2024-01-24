@@ -1,11 +1,12 @@
 .search-bar{
     position: fixed;
     left: 100px;
-    top: 150px;
+    top: 100px;
     padding: 5px;
 }
 
 #search-button{
    background-color: black;
-   color: white;  
+   color: white;
+   margin-left: 10px;  
 }

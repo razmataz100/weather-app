@@ -1,4 +1,4 @@
-import { useRef, useState} from "react";
+import { useEffect, useRef, useState} from "react";
 import './Search.css'
 import CurrentCity from "../CurrentCity/CurrentCity";
 import Forecast from "../Forecast/Forecast";
@@ -6,15 +6,18 @@ import Forecast from "../Forecast/Forecast";
 
 const Search = () => {
 
-    const cityVal = useRef();
+    const [city, setCity] = useState("Stockholm")
     const [weatherData, setWeatherData] = useState("");
     const [forecastData, setForecastData] = useState([]);
     const apiKey = "856f176838c048c5824171034241701";
     const apiUrl = "http://api.weatherapi.com/v1/forecast.json"
 
+    useEffect(() =>{
+        getWeather();
+    }, [])
+
     const getWeather = () => {
         
-        const city = cityVal.current.value;
         const requestUrl = `${apiUrl}?key=${apiKey}&q=${city}&days=6`;
 
 
@@ -42,23 +45,27 @@ const Search = () => {
                 Date: day.date,
                 MaxTemp: day.day.maxtemp_c,
                 MinTemp: day.day.mintemp_c,
-                Condition: day.day.condition.text
+                Condition: day.day.condition.text,
+                Icon: day.day.condition.icon
             }));
 
             setWeatherData(item)
             setForecastData(forecastItems)
-        })
+        });
 
+    };
+
+    const handleCityChange = (event) => {
+        setCity(event.target.value);
     }
 
     return(
         <>
         <div className="search-bar">
-        <input type="text" placeholder="City" ref={cityVal} />
+        <input type="text" placeholder="City" value={city} onChange={handleCityChange} />
         <button id="search-button" onClick={getWeather}>Search</button>
         <CurrentCity weatherData={weatherData}/>
         <Forecast forecastData={forecastData}/>
-        
         </div>  
         </>
 
