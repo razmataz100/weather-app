@@ -1,38 +1,41 @@
 .forecast-container{
     background-color: transparent;
     height: 49%;
-    width: 98%;
+    width: 100%;
     top: 47%;
     left:20px;
     right:20px;
     bottom: 30%;
     border-radius: 20px;
     position: fixed;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
 .day-containers{
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
-    background-color: white;
+    background-color: rgb(233, 231, 228);
     display: inline-block;
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
-    margin: 1%;
+    margin-top: -10px;
+    margin-left: 15px;
     box-sizing: border-box;
     width: 16%;
-    height: 90%;
-}
-
-.info2-style{
-    position: relative;
-    top: -20px;
-
-}
-
-#icon2-style{
-    margin-right:23%;
-    position: relative;
-    left: 11%;
-    top: -4px
+    height: 100%;
+    max-height: 700px;
     
+}
+
+#condition2-style{
+    margin-top: -20px;
+}
+
+#max-style {
+    margin-top: 20px;
+    margin-bottom: -8px; /* Adjust the value according to your design */
+}
+
+#min-style {
+    margin-top: 10px; /* Adjust the value according to your design */
 }

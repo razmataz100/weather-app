@@ -1,45 +1,47 @@
 .current-city-container{
-    background-color: white;
-    height: 40%;
+    background-color: rgb(233, 231, 228);
+    height: 38%;
     width: 40%;
     top: 20px;
     border-radius: 20px;
-    left: 33%;
+    left: 34%;
     position: fixed;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
 
 #city-style{
-    position: absolute;
-    left: 10%;    
+    margin-top: 16px;
+    margin-right: 280px;
+    
+    
+}
+
+.weather-info {
+    margin-right: 280px;
+    margin-bottom: 10px;
+}
+
+#temp-style{
+    margin-top: -10px;
+    font-size: larger;
 }
 
 #icon1-style{
-    position: relative;
-    top: 48%;
-    right: 30%
+    margin-top: -20px;
 }
-#condition-style{
-    position:absolute;
-    top: 70%;
-    left: 12%
-}
-#temp-style{
-    position:absolute;
-    top:22%;
-    left: 17%;
-    font-size: 20px;
+#condition1-style {
+    margin-top: -10px;
 }
 
 #time-style{
-    position:absolute;
-    left: 55%;
-    top: 5%;
+    margin-left: 200px;
+    margin-top: -163px;
 }
 
 .info1-style{
-    position:absolute;
-    left: 56%;
-    top: 34%
+    margin-left: 200px;
+    margin-top: 25px;
 }
 

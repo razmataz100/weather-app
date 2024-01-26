@@ -55,14 +55,14 @@ const Search = () => {
 
     };
 
-    const handleCityChange = (event) => {
+    const handleCityChange = event => {
         setCity(event.target.value);
     }
 
     return(
         <>
         <div className="search-bar">
-        <input type="text" placeholder="City" value={city} onChange={handleCityChange} />
+        <input type="text" placeholder="City" value={city} onChange={handleCityChange}/>
         <button id="search-button" onClick={getWeather}>Search</button>
         <CurrentCity weatherData={weatherData}/>
         <Forecast forecastData={forecastData}/>
