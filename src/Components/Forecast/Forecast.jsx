@@ -9,22 +9,16 @@ const Forecast = ({forecastData}) => {
         <div className="forecast-container">
         {forecastData.map((day, index)=>(
             <div key={index} className='day-containers'>
-                <p>{day.Date}</p>
-                <p><img src={day.Icon} alt="Weather Icon" id='icon2-style'/></p>
-                
-                <div className='info2-style'>
-                <p>{day.Condition}</p>
-                <p>Max {day.MaxTemp}</p>
-                <p>Min {day.MinTemp}</p>
-                </div>
-
-                    
+                <p><strong>{day.Date}</strong></p>
+                <p><img src={day.Icon} alt="Weather Icon"/></p>
+                <p id='condition2-style'>{day.Condition}</p>
+                <p id='max-style'>Max {day.MaxTemp} °C</p>
+                <p id='min-style'>Min {day.MinTemp} °C</p>            
             </div>
         ))}
-        </div>     
+        </div>
         </>
-
     );
-
 }
 export default Forecast;
+
