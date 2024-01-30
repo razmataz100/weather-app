@@ -14,9 +14,7 @@
 
 #city-style{
     margin-top: 16px;
-    margin-right: 280px;
-    
-    
+    margin-right: 280px;    
 }
 
 .weather-info {
@@ -32,6 +30,7 @@
 #icon1-style{
     margin-top: -15px;
 }
+
 #condition1-style {
     margin-top: -5px;
 }

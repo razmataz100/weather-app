@@ -3,9 +3,8 @@
     left: 130px;
     top: 150px;
     padding: 5px;
-    height: 20%;
+    
 }
-
 
 #search-button{
    background-color: black;
@@ -14,4 +13,3 @@
    background-color: #023e8a; 
    width: 100px;
 }
-

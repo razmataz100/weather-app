@@ -20,9 +20,13 @@ const Search = () => {
         
         const requestUrl = `${apiUrl}?key=${apiKey}&q=${city}&days=6`;
 
-
         fetch(requestUrl)
-        .then(response => response.json())
+        .then(response => {
+            if(!response.ok) {
+                throw new Error('City not found');
+            }
+            return response.json();
+        })
         .then(data =>{
 
             const currentWeather = data.current;
@@ -51,9 +55,11 @@ const Search = () => {
 
             setWeatherData(item)
             setForecastData(forecastItems)
-        });
-
-    };
+        })
+        .catch (error => {
+            alert(error.message);
+    })
+};
 
     const handleCityChange = event => {
         setCity(event.target.value);

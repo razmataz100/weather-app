@@ -29,15 +29,15 @@
 }
 
 #condition2-style{
-    margin-top: -20px;
+    margin-top: -15px;
+    height: 50px;
 }
 
 #max-style {
-    margin-top: auto; 
-    margin-bottom: -8px; /* Adjust the value according to your design */
+    margin-top: -5px;
+    margin-bottom: -5px;
 }
 
 #min-style {
-    margin-top: auto; 
-    margin-top: 10px; /* Adjust the value according to your design */
+    margin-top: 10px;
 }
