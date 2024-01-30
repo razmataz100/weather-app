@@ -68,13 +68,12 @@ const Search = () => {
     return(
         <>
         <div className="search-bar">
-        <input type="text" placeholder="City" value={city} onChange={handleCityChange}/>
-        <button id="search-button" onClick={getWeather}>Search</button>
-        <CurrentCity weatherData={weatherData}/>
-        <Forecast forecastData={forecastData}/>
+            <input type="text" placeholder="City" value={city} onChange={handleCityChange}/>
+            <button id="search-button" onClick={getWeather}>Search</button>
+            <CurrentCity weatherData={weatherData}/>
+            <Forecast forecastData={forecastData}/>
         </div>  
         </>
-
     );
 }
 export default Search;
